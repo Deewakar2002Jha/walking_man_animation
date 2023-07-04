@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create Bird animation Using HTML anD CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .background{
+            width: 160px;
+            height: 174px;
+            /* background: red; */
+            background-image: url("img/forestbackground.png");
+            background-repeat: no-repeat;
+            background-size: cover !important;
+            animation-name: forest;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(2) !important;
+            margin:15% 46%;
+            
+        }
+        .bird{
+            width: 150px;
+            height: 174px;
+            /* background: red; */
+            background-image: url("img/walkingman.png");
+            background-repeat: no-repeat;
+            background-size: cover !important;
+            animation-name: man;
+            animation-duration: 0.3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(3) !important;  
+        }
+        @keyframes man {
+            0%{
+            background-position: 0px 0px;
+                
+            }
+            100%{
+            background-position: -443px 0px;
+            }
+            
+        }
+        @keyframes forest {
+            0%{
+            background-position: 0px 0px;
+
+            }
+            100%{
+            background-position: -325px 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="bird">
+
+        </div>
+    </div>
+</body>
+</html>
